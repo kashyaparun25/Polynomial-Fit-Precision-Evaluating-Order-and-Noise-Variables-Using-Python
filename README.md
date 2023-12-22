@@ -17,11 +17,19 @@ accuracy of the returned parameters. [You need to plot a figure for EACH choice 
 number_of_samples.]
 Please use the following code at the beginning of your program to generate the data.
 # Simulated data is given as follows in Python:
+
 import matplotlib.pyplot as plt
+
 plt.style.use('seaborn-whitegrid')
+
 import numpy as np
+
 noise_scale = 100
+
 number_of_samples = 50
+
 x = 30*(np.random.rand(number_of_samples, 1) - 0.5)
+
 y = 2 * x + 11 * x**2 + 3 * x**3 + noise_scale*np.random.randn(number_of_samples, 1)
+
 plt.plot(x,y,'ro')
